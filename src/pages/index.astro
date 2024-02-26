@@ -1,7 +1,14 @@
 ---
-
+import "../styles/global.css";
+import PageHeader from "../components/PageHeader.astro";
+import PageFooter from "../components/PageFooter.astro";
+import Showcase from "../components/Showcase.astro";
+import Features from "../components/Features.astro";
+import Pagecontent from "../components/Pagecontent.astro";
+import Semesters from "../components/Semesters.astro";
 ---
 
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -20,170 +27,24 @@
     pagefooter
     -->
 
-    <!-- Begin PageHeader -->
-    <header id="pageheader">pageheader
+    <PageHeader/>
 
-        <div class="container"></div> 
-        <!-- end container -->
-    </header>
-    <!-- End PageHeader -->
+    <Showcase/>
 
 
-
-    <!-- Begin Showcase -->
-    <section id="showcase">showcase</section>
-    <!-- End Showcase -->
+    <Features/>
 
 
 
-    <!-- Begin Features -->
-    <section id="features">features
 
-        <div class="container"></div>
-        <!-- End container -->
-    </section>
-    <!-- End Features -->
+    <Pagecontent/>
 
 
 
-    <!-- Begin Pagecontent -->
-    <main id="pagecontent">pagecontent
-
-        <div class="container"></div>
-        <!-- End container -->
-    </main>
-    <!-- End pagecontent -->
+    <Semesters/>
 
 
+<PageFooter/>
 
-    <!-- Begin Semesters -->
-    <section id="semesters">semesters
-
-        <div class="container"></div>
-        <!-- End container -->
-    </section>
-    <!-- End Semesters -->
-
-
-
-    <!-- Begin Pagefooter -->
-    <footer id="pagefooter">pagefooter
-
-        <div class="container"></div>
-        <!-- End container -->
-    </footer>
-    <!-- End Pagefooter -->
 	</body>
 </html>
-<style>
-	        :root{
-            --color-primary:red;
-            --color-secondary:blue;
-        }
-        html{
-            font-size:62.5%;
-            /* Allows You To Use Rems instead of pixels for sizing */
-            /* .5rem = 5px */
-            /* 1rem = 10px*/
-            /* 1.6rem = 16px */
-            /* 2rem = 20px */
-            /* 6rem = 60px */
-        }
-
-        /* Browser Reset */
-        *, *::before, *::after{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        /* Easy Pixel Calculations With Rem Units*/
-        body{
-            font-size:1.6rem;
-        }
-        /* Fix Browser Bounce on Macs */
-        body{
-            overflow-x:auto;
-            width:100%;
-            overscroll-behavior:none;
-        }
-        /* General Mobile First CSS */
-        .container{
-            background-color: white;
-            min-height:10.0rem;
-            max-width:120rem;
-            margin:auto;
-            padding:0rem 3rem 0rem 3rem;
-        }
-
-        #pageheader{
-            padding:1rem;
-            min-height:200px;
-            background-color: red;
-        }
-        #showcase{
-            padding:1rem;
-            min-height:200px;
-            background-color: orange;
-        }
-        #features{
-            padding:1rem;
-            min-height:200px;
-            background-color: yellow;
-        }
-        #pagecontent{
-            padding:1rem;
-            min-height:200px;
-            background-color: green;
-        }
-        #semesters{
-            padding:1rem;
-            min-height:200px;
-            background-color: rgb(146, 202, 255);
-        }
-        #pagefooter{
-            padding:1rem;
-            min-height:200px;
-            background-color: rgb(60, 14, 169);
-        }
-
-        /* Media Queries */
-        @media only screen and (min-width:320px){
-            body{
-                font-size: 1rem;
-            }
-            #features{
-                background-color: green;
-            }
-        }
-        @media only screen and (min-width:480px){
-            body{
-                font-size: 1.4em;
-            }
-            #features{
-                background-color: turquoise;
-            }
-        }
-        @media only screen and (min-width:768px){
-            body{
-                font-size: 1.6rem;
-            }
-            #features{
-                background-color: purple;
-            }
-        }
-        @media only screen and (min-width:1024px){
-            #features{
-                background-color: lightpink;
-            }
-        }
-        @media only screen and (min-width:1200px){
-            body{
-                font-size: 2rem;
-            }
-            #features{
-                background-color: lightblue;
-            }
-        }
-        /*  */
-</style>
