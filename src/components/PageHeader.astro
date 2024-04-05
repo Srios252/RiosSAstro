@@ -15,3 +15,46 @@
         <!-- end container -->
     </header>
     <!-- End PageHeader -->
+    <style>
+        #pageheader{
+    background-color: var(--color-primary);
+    height:7.0rem;
+}
+/* Special Header Container Styles */
+#pageheader .container{
+    background-color: aquamarine;
+    border:2px dashed red;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height:100%;
+    padding:0 2rem 0 2rem;
+}
+.logo img{
+    height:6rem;
+}
+.logo:hover{
+    animation-name:swim;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function:linear;
+}
+@keyframes swim{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(45deg);}
+}
+/* Header Menu */
+#menu{
+    background-color: #f0ad4a;
+    border:2px dashed red;
+    display:flex;
+    justify-content: space-between;
+    width:20rem;
+    list-style-type: none;
+    background-color: none;
+}
+#menu li a{
+    color:#fff;
+}
+    </style>
